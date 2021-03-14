@@ -21,7 +21,7 @@ def createTable(cursor, tableName, **kwargs):
 
 # Adds row to specified table with specified values
 def insertRow(cursor, tableName, **kwargs):
-    print("Adding row to {tableName} table...")
+    print(f"Adding row to {tableName} table...")
     # Every table will have a SQL ID column and need to have NULL inserted into
     # that column for the autoincrement
     insertRowString = f"INSERT INTO {tableName} (sqlID, "
